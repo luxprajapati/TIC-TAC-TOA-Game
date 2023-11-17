@@ -30,7 +30,7 @@ Contributions to enhance the game or fix issues are welcome! Feel free to open a
 
 ## Credits
 
-The Tic Tac Toe game is developed and maintained by [Your Name](https://github.com/luxprajapati).
+The Tic Tac Toe game is developed and maintained by [Lux Prajapti](https://github.com/luxprajapati).
 
 ## Support
 
