@@ -34,4 +34,4 @@ The Tic Tac Toe game is developed and maintained by [Lux Prajapti](https://githu
 
 ## Support
 
-If you have any questions or encounter issues while playing the game, please contact us at [your@email.com](mailto:luxprajapati81@gmail.com).
+If you have any questions or encounter issues while playing the game, please contact us at [luxprajapati81@gmail.com](mailto:luxprajapati81@gmail.com).
