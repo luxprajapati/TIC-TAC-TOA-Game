@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+
+
+  /* background-image: linear-gradient( 135deg, #FFD26F 10%, #3677FF 100%); */
+  /*Imported from CSS Gradient website*/
+  /* background-blend-mode: multiply; 
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%); */
+
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center;
+}
+
+.game-info{
+  color: black;
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(7px);
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 3rem;
+  text-align: center;
+}
+
+.tic-tac-toe{
+  width: 90%;
+  max-width: 20rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(7px);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,1fr);
+  aspect-ratio: 1/1;
+}
+
+.box{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  font-size: 3rem;
+  color: white;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  transition: all 150ms ease-in-out;
+}
+.box1, .box2, .box4, .box5{
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}  
+.box3, .box6{
+  border-bottom: 2px solid white;
+}
+.box7, .box8{
+  border-right: 2px solid white;
+}
+
+.btn {
+  color: white;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(7px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 150ms ease-in-out;
+}
+
+.btn.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+/* these is class for adding bg color */
+.win{
+  background-color: rgba(0,255,0,0.3);
+}
